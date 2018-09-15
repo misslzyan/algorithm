@@ -10,7 +10,7 @@ package sort
   * @date 2018/9/15 下午3:30
   * @version 1.0
   */
-object InsersionSort {
+object InsertionSort {
 
   def main(args: Array[String]): Unit = {
     val input = Array(8, 7, 6, 5, 4, 3, 2, 1)
