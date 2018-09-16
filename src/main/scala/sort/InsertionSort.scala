@@ -13,28 +13,43 @@ package sort
 object InsertionSort {
 
   def main(args: Array[String]): Unit = {
-    val input = Array(8, 7, 6, 5, 4, 3, 2, 1)
-    input.foreach(print(_))
-    println()
-    val output = insertionSort(input)
-    output.foreach(print(_))
+    //    val input = Array(8, 7, 6, 5, 4, 3, 2, 1)
+    //    input.foreach(print(_))
+    //    println()
+    //    val output = insertionSort(input)
+    //    output.foreach(print(_))
+    //
+    //    for(i <- 0 to 10){
+    //      println(i)
+    //    }
+    //    for(i <- (1 to 10).reverse){
+    //      println(i)
+    //    }
+    //
+    //
+    //    val p = new Person(1,"ligoudan")
+    //    println(p.->(p))
 
-    for(i <- 0 to 10){
+
+    for (i <- 1 to 10) {
       println(i)
     }
-    for(i <- (1 to 10).reverse){
+
+    for (i <- 1 until 10) {
       println(i)
     }
 
+    for (i <- (1 to 10).reverse) {
+      println(i)
+    }
 
-    val p = new Person(1,"ligoudan")
-    println(p.->(p))
+    for (i <- (1 until 10).reverse) {
+      println(i)
+    }
 
-
-
-
-
-
+    for (i <- (1 until 2).reverse) {
+      println(i)
+    }
 
   }
 
@@ -51,10 +66,10 @@ object InsertionSort {
     if (arr.length == 1) {
       return arr;
     }
-    for (i <- 1 until  arr.length) {
+    for (i <- 1 until arr.length) {
       val key = arr(i)
       var index = i
-      for (j <-  (0 to i-1).reverse if arr(j) > key) {
+      for (j <- (0 to i - 1).reverse if arr(j) > key) {
         arr(j + 1) = arr(j)
         index = j
       }
